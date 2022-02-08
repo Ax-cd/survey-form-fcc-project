@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.0rem;
+}
+
+html {
+    font-size: 62.5%;
+    background: url(images/great-gallery.jpg) center no-repeat hsl(200, 53%, 31%);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+#title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 2;
+}
+
+#description {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    color: hsl(0, 0%, 100%);
+}
+
+
+#survey-form {
+    background: hsla(208, 68%, 22%, 0.90);
+    border-radius: 5px;
+    padding: 2rem 3rem;
+    margin: 2rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    max-width: 95%;
+    height: auto;
+}
+@media screen and (max-width: 40em) {
+    #survey-form {
+        margin: 2rem 1rem;
+    }
+}
+
+.optional {
+    font-size: 1.6rem;
+}
+
+
+.input-field {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1.8rem 0;
+}
+
+
+#dropdown, #dropdown-two {
+    background-color: hsl(0, 0%, 100%);
+    color: hsla(217, 9%, 29%, 0.85);
+    cursor: pointer;
+}
+
+
+fieldset {
+    border: none;
+    margin: 0.4rem 0 1.8rem 0;
+    line-height: 1.5;
+}
+
+legend {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0.4rem;
+}
+
+
+#comments {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    margin: 0.3rem 0 1.5rem 0;
+}
+
+
+#submit {
+    background-color: hsl(265, 53%, 52%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 2px;
+    padding: 0.8rem;
+    margin: 1rem 0;
+}
+
+#submit:hover {
+    background-color: hsl(355, 78%, 40%);
+    transition: 350ms ease-out;
+    transform: scale(1.05);
+    cursor: pointer;
+}

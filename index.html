@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form | FCC Project</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">The Empty Museum Survey Form</h1>
+            <p id="description">Thank you for sharing your experience, visitors feedback help us improve the museum</p>    
+        </header>
+
+        <form method="post" action="#adressPage" id="survey-form" aria-labelledby="survey-form">
+
+                <!-- Name -->
+                <p>
+                    <label for="name" id="name-label">Name*</label><br>
+                    <input type="text" name="name" id="name" class="input-field" aria-labelledby="name" placeholder="Enter your name" pattern="[\w+]" autocomplete="name" aria-required="true" required>    
+                </p>
+                
+                <!-- Email -->
+                <p>
+                    <label for="email" id="email-label">Email*</label><br>
+                    <input type="email" name="email" id="email" class="input-field" aria-labelledby="email" placeholder="Enter your Email" autocomplete="email" aria-required="true" required>    
+                </p>
+                
+                <!-- Number -->
+                <p>
+                    <label for="number" id="number-label">Age <span class="optional">(Optional)</span></label><br>
+                    <input type="number" name="number" id="number" class="input-field" min="6" max="120" aria-labelledby="number" placeholder="Enter your age">
+                </p>
+
+                <!-- Dropdown menu -->
+                <p>
+                    <label for="dropdown">Why did you visit the museum?</label><br>
+                    <select name="dropdown" id="dropdown" class="input-field">
+                        <option disabled selected>Select an option</option>
+                        <option value="Research Purposes">Research Purposes</option>
+                        <option value="Family Activity">Family Activity</option>
+                        <option value="Curiosity">Curiosity</option>
+                        <option value="Robbery Planning">Robbery Planning</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </p>
+
+                <!-- Radio buttons -->
+                <fieldset>
+                    <legend>Would you consider visiting the museum again?</legend>
+                    <p>
+                        <input type="radio" name="visit-again" id="definitely" value="definitely">
+                        <label for="definitely">Definitely</label><br>
+
+                        <input type="radio" name="visit-again" id="maybe" value="maybe">
+                        <label for="maybe">Maybe</label><br>
+
+                        <input type="radio" name="visit-again" id="where-exit" value="where-exit">
+                        <label for="where-exit">I haven't left yet, I can't find the exit</label><br>
+
+                        <input type="radio" name="visit-again" id="not-sure" value="not-sure">
+                        <label for="not-sure">Not sure</label>
+                    </p>
+                </fieldset>
+
+                <!-- Dropdown menu 2 -->
+                <p>
+                    <label for="dropdown-two">What is your favorite Art Room in The Empty Museum</label><br>
+                    <select name="dropdown-two" id="dropdown-two" class="input-field">
+                        <option disabled selected>Choose an Art Room</option>
+                        <option value="room-e">Room E</option>
+                        <option value="room-m">Room M</option>
+                        <option value="room-p">Room P</option>
+                        <option value="room-t">Room T</option>
+                        <option value="forbidden-treasure-room">The Forbidden Treasure Room</option>
+                        <option value="room-y">Room Y</option>
+                    </select>
+                </p>
+
+                <!-- Checkboxes -->
+                <fieldset>
+                    <legend>What would you like to see improved? <span class="optional">(Check all that apply)</span></legend>               
+					<p>
+                        <input type="checkbox" name="temporary-exhibitions" id="temporary-exhibitions" class="checkbox" value="temporary-exhibitions"> <label for="temporary-exhibitions">Temporary exhibitions</label><br>
+                        <input type="checkbox" name="permanent-galleries" id="permanent-galleries" value="permanent-galleries"> <label for="permanent-galleries">Permanent galleries</label><br>
+                        <input type="checkbox" name="group-tours" id="group-tours" value="group-tours"> <label for="group-tours">Group tours</label><br>
+                        <input type="checkbox" name="self-guided-visits" id="self-guided-visits" value="self-guided-visits"> <label for="self-guided-visits">Self-guided visits</label><br>
+                        <input type="checkbox" name="souvenir-shop" id="souvenir-shop" value="souvenir-shop"> <label for="souvenir-shop">Souvenir shop</label><br>
+                        <input type="checkbox" name="restaurants" id="restaurants" value="restaurants"> <label for="restaurants">Restaurants</label><br>
+                        <input type="checkbox" name="less-deadly-traps" id="less-deadly-traps" value="less-deadly-traps"> <label for="less-deadly-traps">Less deadly traps in the Forbidden Treasure Room</label><br>
+                        <input type="checkbox" name="wifi" id="wifi" value="wifi"> <label for="wifi">WiFi</label><br>
+                    </p>
+                </fieldset>
+
+                <!-- Text area -->
+                <p>
+                    <label for="comments">Any comments or suggestions?</label><br>
+                    <textarea name="comments" id="comments" aria-labelledby="comments" maxlength=1000 placeholder="Enter your comment here"></textarea>
+                </p>
+
+                <!-- Submit button -->
+                <button type="submit" id="submit" aria-labelledby="submit" value="Submit">Submit</button>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
