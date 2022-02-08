@@ -32,4 +32,4 @@ And tested with:
 
 
 ## Resources
-On how to add a color overlay to a background image (discovered the CSS property 'background-blend-mode'): ["How to add a color overlay to a background-image?" on Stackoverflow] (https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image)
+On how to add a color overlay to a background image (discovered the CSS property 'background-blend-mode'): ["How to add a color overlay to a background-image?" on Stackoverflow](https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image)
